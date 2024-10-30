@@ -1,3 +1,4 @@
+import { Link } from "@/i18n/routing";
 import Image from "next/image";
 import React from "react";
 
@@ -27,7 +28,7 @@ function Services() {
 							<h3>IT Consulting</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt dolore magna aliqua</p>
 							<div className="services-btn">
-								<a href="#" className="read-more"><i className="bi bi-arrow-right-short"></i> Read More</a>
+								<Link href="#" className="read-more"><i className="bi bi-arrow-right-short"></i> Read More</Link>
 							</div>
 						</div>
 					</div>
@@ -46,7 +47,7 @@ function Services() {
 							<h3>Cloud Solutions</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt dolore magna aliqua</p>
 							<div className="services-btn">
-								<a href="#" className="read-more"><i className="bi bi-arrow-right-short"></i> Read More</a>
+								<Link href="#" className="read-more"><i className="bi bi-arrow-right-short"></i> Read More</Link>
 							</div>
 						</div>
 					</div>
@@ -65,7 +66,7 @@ function Services() {
 							<h3>Managed IT Service</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt dolore magna aliqua</p>
 							<div className="services-btn">
-								<a href="#" className="read-more"><i className="bi bi-arrow-right-short"></i> Read More</a>
+								<Link href="#" className="read-more"><i className="bi bi-arrow-right-short"></i> Read More</Link>
 							</div>
 						</div>
 					</div>
@@ -84,7 +85,7 @@ function Services() {
 							<h3>Responsive Design</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt dolore magna aliqua</p>
 							<div className="services-btn">
-								<a href="#" className="read-more"><i className="bi bi-arrow-right-short"></i> Read More</a>
+								<Link href="#" className="read-more"><i className="bi bi-arrow-right-short"></i> Read More</Link>
 							</div>
 						</div>
 					</div>
@@ -103,7 +104,7 @@ function Services() {
 							<h3>Cyber Security</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt dolore magna aliqua</p>
 							<div className="services-btn">
-								<a href="#" className="read-more"><i className="bi bi-arrow-right-short"></i> Read More</a>
+								<Link href="#" className="read-more"><i className="bi bi-arrow-right-short"></i> Read More</Link>
 							</div>
 						</div>
 					</div>
@@ -122,7 +123,7 @@ function Services() {
 							<h3>Solving IT Problems</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt dolore magna aliqua</p>
 							<div className="services-btn">
-								<a href="#" className="read-more"><i className="bi bi-arrow-right-short"></i> Read More</a>
+								<Link href="#" className="read-more"><i className="bi bi-arrow-right-short"></i> Read More</Link>
 							</div>
 						</div>
 					</div>

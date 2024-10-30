@@ -1,3 +1,4 @@
+import { Link } from '@mui/material'
 import React from 'react'
 
 function Hire() {
@@ -12,8 +13,8 @@ function Hire() {
 						<h2>Digitally Transform & Grow Your Business</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud consectetur voluptatem accusantium doloremque adipiscing elit.</p>
 						<div className="hire-btn">
-							<a className="default-btn" href="tel:12345678">Call Now<span></span></a>
-							<a className="default-btn-one" href="contact.html">Contact Us<span></span></a>
+							<Link className="default-btn" href="tel:12345678">Call Now<span></span></Link>
+							<Link className="default-btn-one" href="contact.html">Contact Us<span></span></Link>
 						</div>
 					</div>
 				</div>

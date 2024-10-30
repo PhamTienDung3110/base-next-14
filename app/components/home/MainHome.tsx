@@ -1,3 +1,4 @@
+import { Link } from "@/i18n/routing";
 import Image from "next/image";
 import React from "react";
 
@@ -15,9 +16,9 @@ function MainHome() {
 								<h1>Your Successful Business, Our Fantastic <span className="text-gradient">IT Support.</span></h1>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor magna aliqua, magna aliqua. ipsum is simply dummy text of the printing.</p>
 								<div className="banner-btn">
-									<a className="default-btn-one" href="services.html">Our Service <span></span></a>
+									<Link className="default-btn-one" href="/services">Our Service <span></span></Link>
 									<div className="video-box">
-										<a href="https://www.youtube.com/watch?v=G9TdA8d5aaU" className="popup-video video-btn"> <i className="fa fa-play"></i></a>
+										<Link href="https://www.youtube.com/watch?v=G9TdA8d5aaU" className="popup-video video-btn"> <i className="fa fa-play"></i></Link>
 									</div>
 								</div>
 							</div>

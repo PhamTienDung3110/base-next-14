@@ -1,3 +1,4 @@
+import { Link } from "@/i18n/routing";
 import Image from "next/image";
 import React from "react";
 
@@ -46,9 +47,9 @@ function MainAbout() {
                   </div>
                 </div>
                 <div className="about-btn-box">
-                  <a className="default-btn" href="about.html">
+                  <Link className="default-btn" href="/">
                     Learn More <span></span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -1,3 +1,4 @@
+import { Link } from "@/i18n/routing";
 import React from "react";
 
 function CopyRight() {
@@ -15,10 +16,10 @@ function CopyRight() {
             <div className="col-lg-6 col-md-6">
               <ul>
                 <li>
-                  <a href="terms-condition.html">Terms & Conditions</a>
+                  <Link href="/terms-condition">Terms & Conditions</Link>
                 </li>
                 <li>
-                  <a href="privacy-policy.html">Privacy Policy</a>
+                  <Link href="/privacy-policy">Privacy Policy</Link>
                 </li>
               </ul>
             </div>

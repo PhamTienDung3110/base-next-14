@@ -1,214 +1,155 @@
-import React from "react";
+"use client";
+
+import { Link } from "@/i18n/routing";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 function Navbar() {
+  const pathname = usePathname();
+  console.log('pathname', pathname)
+  const isLocaleOnlyPath = /^\/(vi|en)(\/)?$/.test(pathname || '');
   return (
     <>
-      {/* Start Navbar Section */}
       <div className="navbar-section">
         <div className="techvio-responsive-nav">
           <div className="container">
             <div className="techvio-responsive-menu">
               <div className="logo">
-                <a href="index.html">
-                  <img src="/img/logo.png" className="white-logo" alt="logo" />
-                  <img
+                <Link href="/">
+                  <Image width={171} height={35} src="/img/logo.png" className="white-logo" alt="logo" />
+                  <Image width={171} height={35}
                     src="/img/logo-black.png"
                     className="black-logo"
                     alt="logo"
                   />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
         </div>
-        <div className="techvio-nav">
+        <div className={isLocaleOnlyPath ? "techvio-nav index-navber" : "techvio-nav"}>
           <div className="container">
             <nav className="navbar navbar-expand-md navbar-light">
-              <a className="navbar-brand" href="index.html">
-                <img src="/img/logo.png" className="white-logo" alt="logo" />
-                <img
+              <Link className="navbar-brand" href="/">
+                <Image width={171} height={35} src={isLocaleOnlyPath ? "/img/logo-black.png" : "/img/logo.png"} className="white-logo" alt="logo" />
+                <Image width={171} height={35}
                   src="/img/logo-black.png"
                   className="black-logo"
                   alt="logo"
                 />
-              </a>
+              </Link>
               <div
                 className="collapse navbar-collapse mean-menu"
                 id="navbarSupportedContent"
               >
                 <ul className="navbar-nav">
                   <li className="nav-item">
-                    <a href="#" className="nav-link">
-                      Home <i className="fas fa-chevron-down"></i>
-                    </a>
-                    <ul className="dropdown-menu">
-                      <li className="nav-item">
-                        <a href="index.html" className="nav-link">
-                          Home 1
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a href="index-2.html" className="nav-link">
-                          Home 2
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a href="index-3.html" className="nav-link">
-                          Home 3
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a href="index-4.html" className="nav-link">
-                          Home 4
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a href="index-5.html" className="nav-link">
-                          Home 5
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a href="index-6.html" className="nav-link">
-                          Home 6
-                        </a>
-                      </li>
-                    </ul>
+                    <Link href="/" className="nav-link">
+                      Home
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a href="about.html" className="nav-link">
+                    <Link href="/about" className="nav-link">
                       About Us
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a href="#" className="nav-link">
-                      Services <i className="fas fa-chevron-down"></i>
-                    </a>
-                    <ul className="dropdown-menu">
-                      <li className="nav-item">
-                        <a href="services.html" className="nav-link">
-                          Services 1
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a href="services-2.html" className="nav-link">
-                          Services 2
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a href="services-3.html" className="nav-link">
-                          Services 3
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a href="single-services.html" className="nav-link">
-                          Services Details
-                        </a>
-                      </li>
-                    </ul>
+                    <Link href="/services" className="nav-link">
+                      Services
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a href="#" className="nav-link">
-                      Portfolio <i className="fas fa-chevron-down"></i>
-                    </a>
+                    <Link href="/portfolio" className="nav-link">
+                      Portfolio<i className="fas fa-chevron-down"></i>
+                    </Link>
                     <ul className="dropdown-menu">
                       <li className="nav-item">
-                        <a href="portfolio.html" className="nav-link">
+                        <Link href="/portfolio" className="nav-link">
                           Portfolio
-                        </a>
+                        </Link>
                       </li>
                       <li className="nav-item">
-                        <a href="single-portfolio.html" className="nav-link">
+                        <Link href="/portfolio-detail" className="nav-link">
                           Portfolio Details
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="nav-item">
-                    <a href="#" className="nav-link">
+                    <Link href="#" className="nav-link">
                       Pages <i className="fas fa-chevron-down"></i>
-                    </a>
+                    </Link>
                     <ul className="dropdown-menu">
                       <li className="nav-item">
-                        <a href="about.html" className="nav-link">
+                        <Link href="/about" className="nav-link">
                           About Us
-                        </a>
+                        </Link>
                       </li>
                       <li className="nav-item">
-                        <a href="team.html" className="nav-link">
+                        <Link href="/team" className="nav-link">
                           Team
-                        </a>
+                        </Link>
                       </li>
                       <li className="nav-item">
-                        <a href="pricing.html" className="nav-link">
+                        <Link href="/pricing" className="nav-link">
                           Pricing
-                        </a>
+                        </Link>
                       </li>
                       <li className="nav-item">
-                        <a href="error-404.html" className="nav-link">
-                          404 Error
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a href="faq.html" className="nav-link">
+                        <Link href="/faq" className="nav-link">
                           FAQ
-                        </a>
+                        </Link>
                       </li>
                       <li className="nav-item">
-                        <a href="coming-soon.html" className="nav-link">
+                        <Link href="/coming-soon" className="nav-link">
                           Coming Soon
-                        </a>
+                        </Link>
                       </li>
                       <li className="nav-item">
-                        <a href="terms-condition.html" className="nav-link">
+                        <Link href="/terms-condition" className="nav-link">
                           Terms & Conditions
-                        </a>
+                        </Link>
                       </li>
                       <li className="nav-item">
-                        <a href="privacy-policy.html" className="nav-link">
+                        <Link href="/privacy-policy" className="nav-link">
                           Privacy Policy
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="nav-item">
-                    <a href="#" className="nav-link">
+                    <Link href="/blog" className="nav-link">
                       Blog <i className="fas fa-chevron-down"></i>
-                    </a>
+                    </Link>
                     <ul className="dropdown-menu">
                       <li className="nav-item">
-                        <a href="blog.html" className="nav-link">
-                          Blog Grid
-                        </a>
+                        <Link href="/blog" className="nav-link">
+                          Blog
+                        </Link>
                       </li>
                       <li className="nav-item">
-                        <a href="blog-2.html" className="nav-link">
-                          Blog Right Sidebar
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a href="single-blog.html" className="nav-link">
+                        <Link href="/blog-detail" className="nav-link">
                           Blog Details
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="nav-item">
-                    <a href="contact.html" className="nav-link">
+                    <Link href="/contact" className="nav-link">
                       Contact
-                    </a>
+                    </Link>
                   </li>
                 </ul>
                 <div className="other-option">
-                  <a className="default-btn" href="mailto:demo@example.com">
+                  <Link className="default-btn" href="mailto:demo@example.com">
                     Get It Support <span></span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </nav>
           </div>
         </div>
       </div>
-      {/* End Navbar Section */}
     </>
   );
 }

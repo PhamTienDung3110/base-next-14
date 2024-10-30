@@ -1,3 +1,4 @@
+import { Link } from "@/i18n/routing";
 import Image from "next/image";
 import React from "react";
 
@@ -18,15 +19,15 @@ function Team() {
                 <div className="team-image">
                   <Image width={306} height={344} src="/img/team/team-1.jpg" alt="team" />
                   <div className="team-social-icon">
-                    <a href="#">
+                    <Link href="#">
                       <i className="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#">
+                    </Link>
+                    <Link href="#">
                       <i className="fa-brands fa-x-twitter"></i>
-                    </a>
-                    <a href="#">
+                    </Link>
+                    <Link href="#">
                       <i className="fab fa-linkedin"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="team-info">
@@ -40,15 +41,15 @@ function Team() {
                 <div className="team-image">
                   <Image width={306} height={344} src="/img/team/team-2.jpg" alt="team" />
                   <div className="team-social-icon">
-                    <a href="#">
+                    <Link href="#">
                       <i className="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#">
+                    </Link>
+                    <Link href="#">
                       <i className="fa-brands fa-x-twitter"></i>
-                    </a>
-                    <a href="#">
+                    </Link>
+                    <Link href="#">
                       <i className="fab fa-linkedin"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="team-info">
@@ -62,15 +63,15 @@ function Team() {
                 <div className="team-image">
                   <Image width={306} height={344} src="/img/team/team-3.jpg" alt="team" />
                   <div className="team-social-icon">
-                    <a href="#">
+                    <Link href="#">
                       <i className="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#">
+                    </Link>
+                    <Link href="#">
                       <i className="fa-brands fa-x-twitter"></i>
-                    </a>
-                    <a href="#">
+                    </Link>
+                    <Link href="#">
                       <i className="fab fa-linkedin"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="team-info">
@@ -84,15 +85,15 @@ function Team() {
                 <div className="team-image">
                   <Image width={306} height={344} src="/img/team/team-4.jpg" alt="team" />
                   <div className="team-social-icon">
-                    <a href="#">
+                    <Link href="#">
                       <i className="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#">
+                    </Link>
+                    <Link href="#">
                       <i className="fa-brands fa-x-twitter"></i>
-                    </a>
-                    <a href="#">
+                    </Link>
+                    <Link href="#">
                       <i className="fab fa-linkedin"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="team-info">

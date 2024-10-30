@@ -1,3 +1,4 @@
+import { Link } from '@/i18n/routing'
 import React from 'react'
 
 function Footer() {
@@ -27,22 +28,22 @@ function Footer() {
 				<div className="row">
 					<div className="col-lg-4 col-md-6 col-sm-6">
 						<div className="single-footer-widget">
-							<a className="footer-logo" href="#">
+							<Link className="footer-logo" href="#">
 								<img src="/img/logo.png" className="white-logo" alt="logo"/>
-							</a>
+							</Link>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco consectetur laboris.</p>
 							<ul className="footer-social">
 								<li>
-									<a href="#"> <i className="fab fa-facebook-f"></i></a>
+									<Link href="#"> <i className="fab fa-facebook-f"></i></Link>
 								</li>
 								<li>
-									<a href="#"> <i className="fa-brands fa-x-twitter"></i></a>
+									<Link href="#"> <i className="fa-brands fa-x-twitter"></i></Link>
 								</li>
 								<li>
-									<a href="#"> <i className="fab fa-youtube"></i></a>
+									<Link href="#"> <i className="fab fa-youtube"></i></Link>
 								</li>
 								<li>
-									<a href="#"> <i className="fab fa-linkedin"></i></a>
+									<Link href="#"> <i className="fab fa-linkedin"></i></Link>
 								</li>
 							</ul>
 						</div>
@@ -53,11 +54,11 @@ function Footer() {
 								<h3>Our Services</h3>
 							</div>
 							<ul className="footer-quick-links">
-								<li><a href="#">Startup Solutions</a></li>
-								<li><a href="#">Web Development</a></li>
-								<li><a href="#">Networking Services</a></li>
-								<li><a href="#">SEO Optimization</a></li>
-								<li><a href="#">Apps Development</a></li>
+								<li><Link href="#">Startup Solutions</Link></li>
+								<li><Link href="#">Web Development</Link></li>
+								<li><Link href="#">Networking Services</Link></li>
+								<li><Link href="#">SEO Optimization</Link></li>
+								<li><Link href="#">Apps Development</Link></li>
 							</ul>
 						</div>
 					</div>
@@ -67,11 +68,11 @@ function Footer() {
 								<h3>Useful Links</h3>
 							</div>
 							<ul className="footer-quick-links">
-								<li><a href="about.html">About Us</a></li>
-								<li><a href="portfolio.html">Case Study</a></li>
-								<li><a href="contact.html">Contact Us</a></li>
-								<li><a href="privacy-policy.html">Privacy Policy</a></li>
-								<li><a href="terms-condition.html">Terms & Conditions</a></li>
+								<li><Link href="/about">About Us</Link></li>
+								<li><Link href="/portfolio">Case Study</Link></li>
+								<li><Link href="/contact">Contact Us</Link></li>
+								<li><Link href="/privacy-policy">Privacy Policy</Link></li>
+								<li><Link href="/terms-condition">Terms & Conditions</Link></li>
 							</ul>
 						</div>
 					</div>
@@ -83,12 +84,12 @@ function Footer() {
 							<div className="footer-info-contact">
 								<i className="flaticon-phone-call"></i>
 								<h3>Phone</h3>
-								<span><a href="tel:12345678">080 707 555-321</a></span>
+								<span><Link href="tel:12345678">080 707 555-321</Link></span>
 							</div>
 							<div className="footer-info-contact">
 								<i className="flaticon-envelope"></i>
 								<h3>Email</h3>
-								<span><a href="mailto:demo@example.com">demo@example.com</a></span>
+								<span><Link href="mailto:demo@example.com">demo@example.com</Link></span>
 							</div>
 							<div className="footer-info-contact">
 								<i className="flaticon-placeholder"></i>

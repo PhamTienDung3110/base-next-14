@@ -1,3 +1,4 @@
+import { Link } from '@/i18n/routing'
 import Image from 'next/image'
 import React from 'react'
 
@@ -16,27 +17,27 @@ function BlogHome() {
 				<div className="col-lg-4 col-md-6">
 					<div className="blog-single-item">
 						<div className="blog-image">
-							<a href="single-blog.html">
+							<Link href="/blog-detail">
 								<Image width={416} height={288} src="/img/blog/blog-1.jpg" alt="image"/>
-							</a>
+							</Link>
 						</div>
 						<div className="blog-description">
 							<ul className="blog-info">
 								<li>
-									<a href="#"><i className="bi bi-person-circle"></i> Author</a>
+									<Link href="#"><i className="bi bi-person-circle"></i> Author</Link>
 								</li>
 								<li>
-									<a href="#"><i className="bi bi-calendar-check"></i> 17 June 2024</a>
+									<Link href="#"><i className="bi bi-calendar-check"></i> 17 June 2024</Link>
 								</li>
 							</ul>
 							<div className="blog-text">
 								<h3>
-                                    <a href="single-blog.html">
+                                    <Link href="/blog-detail">
 										Planning for a Safe Return to the Workplace IT Solutions
-                                    </a>
+                                    </Link>
                                 </h3>
 								<p>Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed eiusmod tempor incididunt ut labore dolore magna aliqua</p>
-								<div className="blog-btn"> <a href="single-blog.html" className="read-more"><i className="bi bi-arrow-right-short"></i> Read More</a>
+								<div className="blog-btn"> <Link href="/blog-detail" className="read-more"><i className="bi bi-arrow-right-short"></i> Read More</Link>
 								</div>
 							</div>
 						</div>
@@ -45,28 +46,28 @@ function BlogHome() {
 				<div className="col-lg-4 col-md-6">
 					<div className="blog-single-item">
 						<div className="blog-image">
-							<a href="single-blog.html">
+							<Link href="/blog-detail">
 								<Image width={416} height={288} src="/img/blog/blog-2.jpg" alt="image"/>
-							</a>
+							</Link>
 						</div>
 						<div className="blog-description">
 							<ul className="blog-info">
 								<li>
-									<a href="#"><i className="bi bi-person-circle"></i> Author</a>
+									<Link href="#"><i className="bi bi-person-circle"></i> Author</Link>
 								</li>
 								<li>
-									<a href="#"><i className="bi bi-calendar-check"></i> 20 June 2024</a>
+									<Link href="#"><i className="bi bi-calendar-check"></i> 20 June 2024</Link>
 								</li>
 							</ul>
 							<div className="blog-text">
 								<h3>
-									<a href="single-blog.html">
+									<Link href="/blog-detail">
                                        Announcing Our New Smiles for Success Charity
-                                    </a>
+                                    </Link>
 								</h3>
 								<p>Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed eiusmod tempor incididunt ut labore dolore magna aliqua</p>
 								<div className="blog-btn">
-									<a href="single-blog.html" className="read-more"><i className="bi bi-arrow-right-short"></i> Read More</a>
+									<Link href="/blog-detail" className="read-more"><i className="bi bi-arrow-right-short"></i> Read More</Link>
 								</div>
 							</div>
 						</div>
@@ -75,28 +76,28 @@ function BlogHome() {
 				<div className="col-lg-4 col-md-6">
 					<div className="blog-single-item">
 						<div className="blog-image">
-							<a href="single-blog.html">
+							<Link href="/blog-detail">
 								<Image width={416} height={288} src="/img/blog/blog-3.jpg" alt="image"/>
-							</a>
+							</Link>
 						</div>
 						<div className="blog-description">
 							<ul className="blog-info">
 								<li>
-									<a href="#"><i className="bi bi-person-circle"></i> Author</a>
+									<Link href="#"><i className="bi bi-person-circle"></i> Author</Link>
 								</li>
 								<li>
-									<a href="#"><i className="bi bi-calendar-check"></i> 25 June 2024</a>
+									<Link href="#"><i className="bi bi-calendar-check"></i> 25 June 2024</Link>
 								</li>
 							</ul>
 							<div className="blog-text">
 								<h3>
-                                    <a href="single-blog.html">
+                                    <Link href="/blog-detail">
                                         Machine Learning Applications for Every Industry
-                                    </a>
+                                    </Link>
                                 </h3>
 								<p>Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed eiusmod tempor incididunt ut labore dolore magna aliqua</p>
 								<div className="blog-btn">
-									<a href="single-blog.html" className="read-more"><i className="bi bi-arrow-right-short"></i> Read More</a>
+									<Link href="/blog-detail" className="read-more"><i className="bi bi-arrow-right-short"></i> Read More</Link>
 								</div>
 							</div>
 						</div>

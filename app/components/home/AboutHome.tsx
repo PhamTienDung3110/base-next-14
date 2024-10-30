@@ -1,3 +1,4 @@
+import { Link } from '@/i18n/routing'
 import Image from 'next/image'
 import React from 'react'
 
@@ -15,7 +16,7 @@ function AboutHome() {
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 						<div className="about-btn-box"> 
-							<a className="default-btn" href="about.html">Learn More <span></span></a>
+							<Link className="default-btn" href="/about">Learn More <span></span></Link>
 						</div>
 					</div>
 				</div>

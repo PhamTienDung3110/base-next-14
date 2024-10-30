@@ -25,3 +25,7 @@ body {
     text-wrap: balance;
   }
 } */
+
+.home-page-next .techvio-nav .navbar .navbar-nav .nav-item a {
+  color: #555 !important;
+}

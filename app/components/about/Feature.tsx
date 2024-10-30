@@ -1,5 +1,6 @@
 import React from "react";
 import Image from 'next/image';
+import { Link } from "@/i18n/routing";
 
 function Feature() {
   return (
@@ -17,9 +18,9 @@ function Feature() {
                   enim ad minim veniam
                 </p>
                 <div className="feature-btn-box">
-                  <a href="#" className="read-more">
+                  <Link href="#" className="read-more">
                     <i className="bi bi-arrow-right-short"></i> Learn More
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -33,9 +34,9 @@ function Feature() {
                   enim ad minim veniam
                 </p>
                 <div className="feature-btn-box">
-                  <a href="#" className="read-more">
+                  <Link href="#" className="read-more">
                     <i className="bi bi-arrow-right-short"></i> Learn More
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -49,9 +50,9 @@ function Feature() {
                   enim ad minim veniam
                 </p>
                 <div className="feature-btn-box">
-                  <a href="#" className="read-more">
+                  <Link href="#" className="read-more">
                     <i className="bi bi-arrow-right-short"></i> Learn More
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

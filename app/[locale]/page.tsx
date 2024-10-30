@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   return (
-    <div>
+    <div className="home-page-next">
       <MainHome />
       <Services />
       <AboutHome />

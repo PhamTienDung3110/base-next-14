@@ -1,3 +1,4 @@
+import { Link } from '@/i18n/routing'
 import React from 'react'
 
 function Portfolio() {
@@ -31,8 +32,8 @@ function Portfolio() {
 							<img src="/img/portfolio/portfolio-1.jpg" alt="image"/>
                             <div className="portfolio-content-overlay">
 								<p>App Store | Social Media</p>
-								<h3><a href="single-portfolio.html">Creative Web Design</a></h3>
-								<a className="portfolio-link-icon" href="single-portfolio.html"><i className="bi bi-arrow-right"></i></a>
+								<h3><Link href="/blog-detail">Creative Web Design</Link></h3>
+								<Link className="portfolio-link-icon" href="/blog-detail"><i className="bi bi-arrow-right"></i></Link>
                             </div>
                         </div>
                     </div>
@@ -41,8 +42,8 @@ function Portfolio() {
 							<img src="/img/portfolio/portfolio-2.jpg" alt="image"/>
                             <div className="portfolio-content-overlay">
 								<p>App Store | Social Media</p>
-								<h3><a href="single-portfolio.html">Creative Web Design</a></h3>
-								<a className="portfolio-link-icon" href="single-portfolio.html"><i className="bi bi-arrow-right"></i></a>
+								<h3><Link href="/blog-detail">Creative Web Design</Link></h3>
+								<Link className="portfolio-link-icon" href="/blog-detail"><i className="bi bi-arrow-right"></i></Link>
                             </div>
                         </div>
                     </div>
@@ -51,8 +52,8 @@ function Portfolio() {
 							<img src="/img/portfolio/portfolio-3.jpg" alt="image"/>
                             <div className="portfolio-content-overlay">
 								<p>App Store | Social Media</p>
-								<h3><a href="single-portfolio.html">Creative Web Design</a></h3>
-								<a className="portfolio-link-icon" href="single-portfolio.html"><i className="bi bi-arrow-right"></i></a>
+								<h3><Link href="/blog-detail">Creative Web Design</Link></h3>
+								<Link className="portfolio-link-icon" href="/blog-detail"><i className="bi bi-arrow-right"></i></Link>
                             </div>
                         </div>
                     </div>
@@ -61,8 +62,8 @@ function Portfolio() {
 							<img src="/img/portfolio/portfolio-4.jpg" alt="image"/>
                             <div className="portfolio-content-overlay">
 								<p>App Store | Social Media</p>
-								<h3><a href="single-portfolio.html">Creative Web Design</a></h3>
-								<a className="portfolio-link-icon" href="single-portfolio.html"><i className="bi bi-arrow-right"></i></a>
+								<h3><Link href="/blog-detail">Creative Web Design</Link></h3>
+								<Link className="portfolio-link-icon" href="/blog-detail"><i className="bi bi-arrow-right"></i></Link>
                             </div>
                         </div>
                     </div>
@@ -71,8 +72,8 @@ function Portfolio() {
 							<img src="/img/portfolio/portfolio-5.jpg" alt="image"/>
                             <div className="portfolio-content-overlay">
 								<p>App Store | Social Media</p>
-								<h3><a href="single-portfolio.html">Creative Web Design</a></h3>
-								<a className="portfolio-link-icon" href="single-portfolio.html"><i className="bi bi-arrow-right"></i></a>
+								<h3><Link href="/blog-detail">Creative Web Design</Link></h3>
+								<Link className="portfolio-link-icon" href="/blog-detail"><i className="bi bi-arrow-right"></i></Link>
                             </div>
                         </div>
                     </div>
@@ -81,8 +82,8 @@ function Portfolio() {
 							<img src="/img/portfolio/portfolio-6.jpg" alt="image"/>
                             <div className="portfolio-content-overlay">
 								<p>App Store | Social Media</p>
-								<h3><a href="single-portfolio.html">Creative Web Design</a></h3>
-								<a className="portfolio-link-icon" href="single-portfolio.html"><i className="bi bi-arrow-right"></i></a>
+								<h3><Link href="/blog-detail">Creative Web Design</Link></h3>
+								<Link className="portfolio-link-icon" href="/blog-detail"><i className="bi bi-arrow-right"></i></Link>
                             </div>
                         </div>
                     </div>

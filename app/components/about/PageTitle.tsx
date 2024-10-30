@@ -1,3 +1,4 @@
+import { Link } from "@/i18n/routing";
 import React from "react";
 
 function PageTitle() {
@@ -11,7 +12,7 @@ function PageTitle() {
                 <h2>About Us</h2>
                 <ul>
                   <li>
-                    <a href="index.html">Home</a>
+                    <Link href="/">Home</Link>
                   </li>
                   <li>About Us</li>
                 </ul>
