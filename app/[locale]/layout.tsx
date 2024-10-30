@@ -1,11 +1,10 @@
-import { NextIntlClientProvider } from 'next-intl';
+import { NextIntlClientProvider } from "next-intl";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { getMessages } from 'next-intl/server';
-import LocalSwitcher from '../components/local-switcher';
-import MuiThemeProvider from '../../configs/mui/MuiThemeProvider';
-import ClientScriptLoader from '../components/ClientScriptLoader';
+import { getMessages } from "next-intl/server";
+import MuiThemeProvider from "../../configs/mui/MuiThemeProvider";
+import ClientScriptLoader from "../components/ClientScriptLoader";
 
 import "../../public/css/animate.min.css";
 import "../../public/css/bootstrap-icons.css";
@@ -17,11 +16,15 @@ import "../../public/css/meanmenu.css";
 import "../../public/css/owl.carousel.min.css";
 import "../../public/css/swiper.min.css";
 import "../../public/css/vegas.min.css";
-import "../../public/css/style.css";
 import "../../public/css/responsive.css";
+import "../../public/css/style.css";
+import Navbar from "../components/layout/Navbar";
+import Footer from "../components/layout/Footer";
+import CopyRight from "../components/layout/CopyRight";
+import GoTop from "../components/layout/GoTop";
 
 const geistSans = localFont({
-  src: "../fonts/GeistVF.woff", 
+  src: "../fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
@@ -51,7 +54,11 @@ export default async function RootLayout({
         >
           <MuiThemeProvider>
             <ClientScriptLoader />
+            <Navbar />
             {children}
+            <Footer />
+            <CopyRight />
+            <GoTop />
           </MuiThemeProvider>
         </body>
       </NextIntlClientProvider>

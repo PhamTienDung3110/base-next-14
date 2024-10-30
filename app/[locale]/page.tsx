@@ -1,8 +1,15 @@
-import {useTranslations} from 'next-intl';
-import {Link} from '@/i18n/routing';
-import { Button } from '@mui/material';
-import MyForm from '../components/MyForm';
 import { Metadata } from 'next';
+import MainHome from '../components/home/MainHome';
+import Services from '../components/home/Services';
+import AboutHome from '../components/home/AboutHome';
+import Portfolio from '../components/home/Portfolio';
+import WorksProcess from '../components/layout/WorksProcess';
+import Counter from '../components/layout/Counter';
+import Testimonial from '../components/home/Testimonial';
+import Faq from '../components/home/Faq';
+import Hire from '../components/layout/Hire';
+import BlogHome from '../components/home/BlogHome';
+import Partner from '../components/layout/Partner';
  
 export const metadata: Metadata = {
   title: "Trang chủ",
@@ -16,15 +23,19 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
-  const t = useTranslations('HomePage');
   return (
     <div>
-      <h1>{t('title')}</h1>
-      <Link href="/about">{t('about')}</Link>
-      <Button variant="contained" color="secondary">
-        {t('title')}
-      </Button>
-      <MyForm />
+      <MainHome />
+      <Services />
+      <AboutHome />
+      <Portfolio />
+      <WorksProcess />
+      <Counter />
+      <Testimonial />
+      <Faq />
+      <Hire />
+      <BlogHome />
+      <Partner />
     </div>
   );
 }
