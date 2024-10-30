@@ -4,10 +4,24 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { getMessages } from 'next-intl/server';
 import LocalSwitcher from '../components/local-switcher';
-import MuiThemeProvider from '../../configs/mui/MuiThemeProvider'; // Đường dẫn đến component mới
+import MuiThemeProvider from '../../configs/mui/MuiThemeProvider';
+import ClientScriptLoader from '../components/ClientScriptLoader';
+
+import "../../public/css/animate.min.css";
+import "../../public/css/bootstrap-icons.css";
+import "../../public/css/bootstrap.min.css";
+import "../../public/css/flaticon.css";
+import "../../public/css/fontawesome.min.css";
+import "../../public/css/magnific-popup.min.css";
+import "../../public/css/meanmenu.css";
+import "../../public/css/owl.carousel.min.css";
+import "../../public/css/swiper.min.css";
+import "../../public/css/vegas.min.css";
+import "../../public/css/style.css";
+import "../../public/css/responsive.css";
 
 const geistSans = localFont({
-  src: "../fonts/GeistVF.woff",
+  src: "../fonts/GeistVF.woff", 
   variable: "--font-geist-sans",
   weight: "100 900",
 });
@@ -36,9 +50,7 @@ export default async function RootLayout({
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
           <MuiThemeProvider>
-            <header>
-              <LocalSwitcher />
-            </header>
+            <ClientScriptLoader />
             {children}
           </MuiThemeProvider>
         </body>
